@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Authentication & JWT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>User Authentication & JWT</h1>
+    <p class="intro">Register, login and test a protected API route.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input id="regName" placeholder="Full name" required>
+          <input id="regEmail" type="email" placeholder="Email" required>
+          <input id="regPassword" type="password" placeholder="Password" required>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input id="loginEmail" type="email" placeholder="Email" required>
+          <input id="loginPassword" type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card result">
+      <h2>Protected API</h2>
+      <button id="protectedBtn">Access Protected Route</button>
+      <button id="logoutBtn" class="secondary">Logout</button>
+      <pre id="output">Login first, then test the protected route.</pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
